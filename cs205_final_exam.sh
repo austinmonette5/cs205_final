@@ -9,3 +9,28 @@
 # The spacing and header formatting should match the above formatting description exactly.
 # There should be a comment explaining the purpose of each line in your shell script. 
 # The data file will be passed in to the script as a positional parameter and will not necessarily be called pokemon.dat. However, you can assume that any file passed to this script will be formatted exactly the way pokemon.dat is formatted.
+
+#!/bin/sh
+
+#Start of script
+#Making the header
+echo "======= SUMMARY OF POKEMON.DAT ======="
+
+#Finding total amount of pokemon
+TOTPOKE=`WC -l < pokemon.dat`
+echo "Total pokemon: $TOTPOKE"
+
+#Finding the avg. HP:
+AVGHP=0
+echo "Avg. HP: $AVGHP"
+
+#Finding the avg. attack:
+ATTK=0
+echo "Avg. Attack: $ATTK"
+
+#Creating footer:
+echo "======= END SUMMARY ======="
+#
+#
+#
+
